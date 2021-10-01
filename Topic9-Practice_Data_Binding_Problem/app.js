@@ -3,7 +3,7 @@ const app = Vue.createApp({
         return {
             myName: 'Glenn Anrei Placer',
             myAge: 20,
-            url: 'https://vuejs.org/images/logo,png'
+            url: 'https://vuejs.org/images/logo.png'
         };
     },
     methods: {
