@@ -89,3 +89,7 @@ p {
 .visible {
   display: block;
 }
+
+.demo {
+  width: 100%;
+}

@@ -4,7 +4,8 @@ const app = Vue.createApp({
             style: '',
             color1: '',
             styleMe: '',
-            colorMe: ''
+            colorMe: '',
+            myButton: true
         };
     },
     methods: {
@@ -17,6 +18,9 @@ const app = Vue.createApp({
             } else if(this.style === 'user2') {
                 this.color1 = 'user2';
             }
+        },
+        TButton() {
+            this.myButton = !this.myButton;
         },
         PickC(event) {
             this.styleMe = event.target.value;
