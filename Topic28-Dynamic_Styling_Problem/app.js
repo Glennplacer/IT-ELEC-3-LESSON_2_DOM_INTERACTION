@@ -2,7 +2,9 @@ const app = Vue.createApp({
     data() {
         return {
             style: '',
-            color1: ''
+            color1: '',
+            styleMe: '',
+            colorMe: ''
         };
     },
     methods: {
@@ -15,6 +17,10 @@ const app = Vue.createApp({
             } else if(this.style === 'user2') {
                 this.color1 = 'user2';
             }
+        },
+        PickC(event) {
+            this.styleMe = event.target.value;
+            this.colorMe = this.styleMe;
         }
     }
 });
