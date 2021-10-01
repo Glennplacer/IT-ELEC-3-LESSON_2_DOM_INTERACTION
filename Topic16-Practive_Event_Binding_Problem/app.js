@@ -7,7 +7,13 @@ const app = Vue.createApp({
     },
     methods: {
         submit() {
-            alert('Hello World!')
+            alert('Hello World!');
+        },
+        set1(event) {
+            this.output1 = event.target.value;
+        },
+        set2(event) {
+            this.output2 = event.target.value;
         }
     }
 });
