@@ -19,7 +19,7 @@
     <section id="assignment">
       <!-- 1) Fetch the user input and use it as a CSS class -->
       <!-- The entered class should be added to the below paragraph -->
-      <input type="text" v-on:keyup = "get" />
+      <input type="text" v-on:keyup = "get" placeholder="Input 'user1/user2' "/>
       <!-- (available classes: "user1", "user2") -->
       <div class = "demo" :class="{visible: myButton, hidden: !myButton}">
       <p :class = "color1">
@@ -31,7 +31,7 @@
       <!-- Clicking the button should toggle between the two options -->
 
       <!-- 3) Add dynamic inline styling to the below paragraph and let the user enter a background-color -->
-      <input type="text" v-on:keyup = "PickC" />
+      <input type="text" v-on:keyup = "PickC" placeholder="Input color Name" />
       <p :style="{backgroundColor: colorMe}">Style me inline!</p>
     </section>
   </body>
